@@ -55,7 +55,7 @@ Page({
     var i=0
     var j=0
     wx.request({
-      url: 'https://whfisher.xyz/vintage/shophq.php',
+      url: 'url',
       success(e){
         var acc=e.data.shop
         while(acc[i]){
