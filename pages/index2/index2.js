@@ -35,7 +35,7 @@ Page({
         })
         var city2=e.data
         wx.request({
-          url: 'https://whfisher.xyz/vintage/citys.php',
+          url: 'url',
           success(e){
                           wx.request({
                     url: 'https://restapi.amap.com/v3/weather/weatherInfo?key=81e7539d514f1b5c6f79ee0b4b1e9424&city='+city2,
@@ -47,7 +47,7 @@ Page({
                     }
                   })
                   wx.request({
-                    url: 'https://whfisher.xyz/vintage/lyhq.php',
+                    url: 'url',
                     data:{
                       city:city2
                     },
@@ -102,14 +102,14 @@ Page({
     var that=this
     console.log("点击了上传留言按钮")
     wx.request({
-      url: 'https://whfisher.xyz/vintage/lyhq.php',
+      url: 'url',
       success(res){
         console.log("数据库留言：",res.data.lyb)
         var lycd=res.data.lyb.length+1
         wx.uploadFile({
           filePath: that.data.mrtx,
           name: 'file',
-          url: 'https://whfisher.xyz/vintage/upimg.php',
+          url: 'url',
           formData:{
             xh:lycd,
             city:that.data.cityname
@@ -121,10 +121,10 @@ Page({
               })
               console.log('上传失败')
               wx.request({
-                url: 'https://whfisher.xyz/vintage/lysc.php',
+                url: 'url',
                 data:{
                   city:that.data.cityname,
-                  tx:'https://whfisher.xyz/'+that.data.cityname+'lyb/'+lycd+'.jpg?'+Math.random()/9999,
+                  tx:'url'+that.data.cityname+'lyb/'+lycd+'.jpg?'+Math.random()/9999,
                   xh:lycd,
                   content:that.data.content
                 }
@@ -133,10 +133,10 @@ Page({
               that.sxlyb()
             }else{
               wx.request({
-                url: 'https://whfisher.xyz/vintage/lysc.php',
+                url: 'url',
                 data:{
                   city:that.data.cityname,
-                  tx:'https://whfisher.xyz/'+that.data.cityname+'lyb/'+lycd+'.jpg?'+Math.random()/9999,
+                  tx:'url'+that.data.cityname+'lyb/'+lycd+'.jpg?'+Math.random()/9999,
                   xh:lycd,
                   content:that.data.content
                 }
@@ -190,7 +190,7 @@ Page({
   sxlyb:function(e){
     var that=this
     wx.request({
-      url: 'https://whfisher.xyz/vintage/lyhq.php',
+      url: 'url',
       data:{
         city:that.data.cityname
       },
@@ -262,7 +262,7 @@ Page({
         })
         var city2=e.data
         wx.request({
-          url: 'https://whfisher.xyz/vintage/citys.php',
+          url: 'url',
           success(e){
                           wx.request({
                     url: 'https://restapi.amap.com/v3/weather/weatherInfo?key=81e7539d514f1b5c6f79ee0b4b1e9424&city='+city2,
@@ -274,7 +274,7 @@ Page({
                     }
                   })
                   wx.request({
-                    url: 'https://whfisher.xyz/vintage/lyhq.php',
+                    url: 'url',
                     data:{
                       city:city2
                     },
