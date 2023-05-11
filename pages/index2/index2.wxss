@@ -1,0 +1,225 @@
+/* pages/index2/index2.wxss */
+.ip{
+  position: absolute;
+  bottom: 5rpx;
+  left: 270rpx;
+  font-size: 25rpx;
+  color: rgb(129, 129, 129);
+}
+.city{
+  position: fixed;
+  height: 200rpx;
+  width: 100%;
+  border-radius: 25rpx;
+}
+.bing{
+  position: fixed;
+  top: 180rpx;
+  height: 250rpx; 
+  width: 100%;
+  border-radius: 25rpx;
+  opacity: 0.8;
+}
+.title{
+  position: absolute;
+  top: 200rpx;
+  font-size: 20px;  
+  left: 40rpx;
+  font-style:oblique;
+  color: white;
+}
+.tianqi{
+  position: absolute;
+  top: 290rpx;
+  font-size: 18 px;  
+  left: 20rpx;
+  font-style:oblique;
+  color: white;
+}
+.lunbo{
+  width: 100%;
+  height: 500rpx;
+  border-radius: 25rpx;
+}
+.lunhui{
+  position: relative;
+  width: 750rpx;
+  height: 160rpx;
+  /* border-radius: 30rpx; */
+  /* border: solid rgb(99, 97, 97) 0.5px; */
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  justify-content: center;
+}
+.liuyan{
+  position: fixed;
+  top: 450rpx;
+  height: 1010rpx;
+  width: 100%;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  background-color: rgb(179, 236, 205);
+}
+.wxname{
+  position: absolute;
+  top: 40rpx;
+  left: 120rpx;
+  font-size: 30rpx;
+  width: 76%;
+}
+.wxtx{
+  position: absolute;
+  top: 25rpx;
+  left: 20rpx;
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 20rpx;
+}
+.beijing{
+  position: absolute;
+  top: 110rpx;
+  left: 50rpx;
+  height: 135rpx;
+  width: 650rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+.lykgn{
+  position: fixed;
+  top: 450rpx;
+  height: 90rpx;
+  width: 100%;
+  background-color:rgb(179, 236, 205) ;
+  border-top-right-radius: 30rpx;
+  border-top-left-radius: 30rpx;
+}
+.shuru{
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  top: 70rpx;
+  height: 135rpx;
+  width: 445rpx;
+  left: 120rpx;
+  border-radius: 15rpx;
+  padding-left: 15rpx;
+  padding-top: 15rpx;
+  font-size: 30rpx;
+  color: rgb(211, 33, 33);
+}
+.lytb{
+  position: fixed;
+  top: 450rpx;
+  height: 80rpx;
+  width: 80rpx;
+  right: 40rpx;
+}
+.aniu{
+  position: fixed;
+  top: 450rpx;
+  height: 50rpx;
+  right: 40rpx;
+  background-color:rgb(179, 236, 205) ;
+}
+.lybj{
+  position: fixed;
+  top: 650rpx;
+  height: 350rpx;
+  width: 600rpx;
+  left: 75rpx;
+  background-color: rgb(120, 209, 139);
+  border-radius: 25rpx;
+
+}
+.pingbi{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  opacity: 0.3;
+}
+.wcheng{
+  position: relative;
+  top: 100rpx;
+}
+.guanbi{
+  position: fixed;
+  top: 660rpx;
+  height: 60rpx;
+  width: 60rpx;
+  left: 80rpx;
+}
+.gban{
+  position: fixed;
+  background-color: transparent;
+  top: 0rpx;
+  height: 70rpx;
+  width: 60rpx;
+  left: -250rpx;
+}
+.mrtx{
+  position: fixed;
+  top: 745rpx;
+  width: 90rpx;
+  height: 90rpx;
+  left: 88rpx;
+  border-radius: 15rpx;
+}
+.topbj{
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+  height: 180rpx;
+  background-color: white;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  justify-content: center;
+}
+.toptext{
+  position: fixed;
+  top: 105rpx;
+  font-weight: 600;
+  }
+.kefu{
+  position: fixed;
+  width: 50rpx;
+  height: 50rpx;
+  top: 105rpx;
+  left: 20rpx;
+}
+.kfan{
+  background-color: transparent;
+  position: fixed;
+  height: 20rpx;
+  left: 0rpx;
+  top: 110rpx;
+
+}
+.lyyc2{
+  position: fixed;
+  top: 700rpx;
+  left: 50rpx;
+  background-color: rgb(255, 255, 255);
+  width: 650rpx;
+  height: 500rpx;
+  border-radius: 30rpx;
+}
+.ggts{
+  top: 140rpx;
+  left: 60rpx;
+  width: 80%;
+  color: pink;
+}
+.pigs{
+  position: fixed;
+  width: 130rpx;
+  height: 130rpx;
+  left: 290rpx;
+}
+.jsly{
+  position: fixed;
+  top: 1080rpx;
+  left: 210rpx;
+}

@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index2/index2",
+    "pages/shouye/shouye",
+    "pages/fabu/fabu",
+    "pages/details/details"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F0F8FF",
+    "backgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "武汉古着总览",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "攻略",
+        "iconPath": "pages/image/飞碟2.png",
+        "selectedIconPath": "pages/image/飞碟.png"
+      },
+      {
+        "pagePath": "pages/shouye/shouye",
+        "text": "Vintage",
+        "iconPath": "pages/image/商店2.png",
+        "selectedIconPath": "pages/image/商店.png"
+      },
+      {
+        "pagePath": "pages/index2/index2",
+        "text": "留言",
+        "iconPath": "pages/image/灯泡2.png",
+        "selectedIconPath": "pages/image/灯泡.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ]
+}

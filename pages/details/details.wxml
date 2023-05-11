@@ -1,0 +1,33 @@
+<!--pages/details/details.wxml-->
+<view class="topbj"></view>
+<image src="../image/返回.png" class="fanhui" bindtap="fanhui"/>
+<image src="{{shop.tx}}" style="width: 70rpx;height: 70rpx;position: fixed;left: 90rpx;z-index: 99;top: 90rpx;border-radius: 35rpx;"/>
+<text style="position: fixed;top: 100rpx;left: 180rpx;z-index: 99;">{{shop.name}}</text>
+
+<swiper style="width: 750rpx;height: 600rpx;position: absolute;top: 180rpx;"circular 	indicator-dots autoplay	>
+  <view wx:for="{{shop.image}}">
+    <swiper-item>
+      <image src="{{item}}" class="lunbo" bindtap="fangda" data-value="{{item}}"/>
+    </swiper-item>
+  </view>
+</swiper>
+
+<view style="background-color: rgb(255, 255, 255);position: relative;top: 790rpx;width: 96%;left: 2%;border: rgb(255, 255, 255) solid 1px;border-radius: 10rpx;box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.4);">
+  <text style="font-size: 40rpx;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">￥{{shop.jg}}</text>
+  <view style="position: relative;left: 30rpx;width: 660rpx;"> 
+    <textarea value="{{shop.content}}" disabled="true" auto-height />感兴趣的话点击右下角绿色图标获取我的联系方式吧~
+  </view>
+</view>
+
+<image src="../image/微信.png" class="lxfs" bindtap="adshows"/>
+
+
+  <view style="position: fixed;width: 500rpx;height: 300rpx;top: 40%;background-color: white;left: 125rpx;border-radius: 20rpx;z-index: 99;display: {{sfyc}};box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.4);">
+    <image src="https://whfisher.xyz/gzsyimg/pangding.png" style="width: 105rpx;height: 95rpx;position: fixed;left: 140rpx;top: 660rpx;"/>
+    <view style="display: flex;justify-content: center;">
+      <text style="position: fixed;top: 750rpx;font-size: 40rpx;color: #ec8ff0;display: flex;justify-content: center;" >{{shop.lxfs}}</text>
+    <button type="primary" style="height: 80rpx;top: 190rpx;width: 180rpx;" bindtap="copy">复制</button>
+    </view>
+  </view>
+<view style="position: fixed;width: 100%;height: 100%;top: 0rpx;background-color: rgb(255, 255, 255);display: {{sfyc}};opacity: 0.5;z-index: 90;">
+</view>

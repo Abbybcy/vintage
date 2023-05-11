@@ -1,0 +1,30 @@
+/* pages/details/details.wxss */
+page{
+  background-color: rgb(255, 255, 255);
+}
+.topbj{
+  position: fixed;
+  width: 100%;
+  height: 180rpx;
+  background-color: rgb(255, 255, 255);
+  z-index: 98;
+}
+.fanhui{
+  position: fixed;
+  width: 40rpx;
+  height: 40rpx;
+  top: 110rpx;
+  z-index: 99;
+  left: 30rpx;
+}
+.lunbo{
+  width: 100%;
+  height: 600rpx;
+}
+.lxfs{
+  position:fixed;
+  width: 100rpx;
+  height: 100rpx;
+  bottom: 20rpx;
+  right: 20rpx;
+}

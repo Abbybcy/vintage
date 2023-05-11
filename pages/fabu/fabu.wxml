@@ -1,0 +1,39 @@
+<!--pages/fabu/fabu.wxml-->
+<view class="topbj"></view>
+<view style="font-size: 33rpx;left: 20rpx;position: fixed;top: 110rpx;z-index: 99;" bindtap="quxiao">取消</view>
+
+<text style="font-size: 35rpx;position: fixed;;top: 110rpx;left: 300rpx ;z-index: 99;">发布物品</text>
+<textarea type="text" placeholder="请尽可能的描述清楚所售的物品哦~" style="position: relative;top: 200rpx;left: 20rpx; padding-left: 10px;width: 90%;" maxlength="-1" bindinput="shuru" auto-height></textarea>
+<text style="position: relative;left: 660rpx;font-size: 27rpx; color:#ec8ff0;top:{{height}}rpx;">{{math}}</text>
+
+
+<image src="../image/添加图片.jpg" class="tjtp" style="display: {{sfyc}};" bindtap="tjtp"/>
+
+<scroll-view class="scroll-view-1" >
+  <block wx:for="{{imagezh}}">
+    <image src="{{item}}" class="item" bindtap="fdtp" data-value="{{item}}"/>
+  </block>
+</scroll-view>
+
+<view style="background-color: rgb(223, 219, 219);height: 0.5px;width: 80%;left: 10%;position: relative;top: 50rpx;"></view>
+<view style="width: 50%;background-color: rgb(255, 255, 255);height: 100rpx;position: relative;top: 50rpx;">
+  <input style="font-size: 35rpx;position: relative;left: 180rpx;top: 20rpx;width: 470rpx;" placeholder="输入价格" bindinput="srjg"></input>
+  <image src="../image/价格.png" style="width: 40rpx;height: 40rpx;position: relative;top: -20rpx;left: 120rpx;"/>
+</view>
+
+<view style="background-color: rgb(223, 219, 219);height: 0.5px;width: 80%;left: 10%;position: relative;top: 50rpx;"></view>
+<view style="width: 100%;background-color: rgb(255, 255, 255);height: 100rpx;position: relative;top: 50rpx;">
+  <picker style="font-size: 35rpx;position: relative;left: 180rpx;top: 20rpx;width: 200rpx;" range='{{clothes}}' bindchange="xzfl">{{xzfl}}</picker>
+  <image src="../image/分类.png" style="width: 40rpx;height: 40rpx;position: relative;top: -20rpx;left: 120rpx;"/>
+</view>
+
+<view style="background-color: rgb(223, 219, 219);height: 0.5px;width: 80%;left: 10%;position: relative;top: 50rpx;"></view>
+<view style="width: 100%;background-color: rgb(255, 255, 255);height: 100rpx;position: relative;top: 50rpx;">
+  <input style="font-size: 35rpx;position: relative;left: 180rpx;top: 20rpx;width: 470rpx;"placeholder="联系方式" bindinput="lxfsinput"></input>
+  <image src="../image/电话.png" style="width: 40rpx;height: 40rpx;position: relative;top: -20rpx;left: 120rpx;"/>
+</view>
+<view style="background-color: rgb(223, 219, 219);height: 0.5px;width: 80%;left: 10%;position: relative;top: 50rpx;"></view>
+
+
+<button type="primary" style="position: relative;top: 80rpx;" bindtap="fabu">发布</button>
+

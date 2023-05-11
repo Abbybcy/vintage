@@ -1,0 +1,57 @@
+<!--pages/shouye/shouye.wxml-->
+<!-- <input type="text" class="search"/> -->
+<image src="../image/camera.png" class="fabu" bindtap="fabu"/>
+
+<view style="width: 100%;height: 75rpx;background-color: rgb(255, 255, 255);  border-top-left-radius: 45rpx;border-top-right-radius: 45rpx;position: fixed;z-index: 99;top: 183rpx;"></view>
+  <scroll-view scroll-x class="fenlei" style="z-index: 99;">
+      <block wx:for="{{fenlei}}" style="display:inline-block;">
+        <view style="font-size: 35rpx;display:inline-block;border: 9px solid rgb(255, 255, 255);color: #ec8ff0;"bindtap='xzfl' data-value="{{item}}" >{{item}}</view>
+      </block>
+      <block style="display: inline-block;">
+        <view style="position: relative;width: 40rpx;height: 6rpx;background-color: {{qbcolor}};left: 30rpx;top: -18rpx;border-radius: 15rpx;">
+        </view>
+        <view style="position: relative;width: 80rpx;height: 6rpx;background-color: {{lyqcolor}};left: 132rpx;top: -25rpx;border-radius: 15rpx;">
+        </view>
+        <view style="position: relative;width: 40rpx;height: 6rpx;background-color: {{bqcolor}};left: 271rpx;top: -31rpx;border-radius: 15rpx;">
+        </view>
+        <view style="position: relative;width: 40rpx;height: 6rpx;background-color: {{ddcolor}};left: 376rpx;top: -37rpx;border-radius: 15rpx;">
+        </view>
+        <view style="position: relative;width: 40rpx;height: 6rpx;background-color: {{xzcolor}};left: 480rpx;top: -42rpx;border-radius: 15rpx;">
+        </view>
+        <view style="position: relative;width: 40rpx;height: 6rpx;background-color: {{jkcolor}};left: 584rpx;top: -48rpx;border-radius: 15rpx;">
+        </view>
+        <view style="position: relative;width: 40rpx;height: 6rpx;background-color: {{cscolor}};left: 688rpx;top: -54rpx;border-radius: 15rpx;">
+        </view>
+        <view style="position: relative;width: 40rpx;height: 6rpx;background-color: {{dxcolor}};left: 792rpx;top: -60rpx;border-radius: 15rpx;">
+        </view>
+        <view style="position: relative;width: 40rpx;height: 6rpx;background-color: {{wycolor}};left: 894rpx;top: -66rpx;border-radius: 15rpx;">
+        </view>
+        <view style="position: relative;width: 40rpx;height: 6rpx;background-color: {{kzcolor}};left: 1000rpx;top: -72rpx;border-radius: 15rpx;">
+        </view>
+        <view style="position: relative;width: 40rpx;height: 6rpx;background-color: {{sscolor}};left: 1107rpx;top: -78rpx;border-radius: 15rpx;">
+        </view>
+        <view style="position: relative;width: 40rpx;height: 6rpx;background-color: {{qtcolor}};left: 1209rpx;top: -84rpx;border-radius: 15rpx;">
+        </view>
+        
+      </block>
+  </scroll-view>
+
+<scroll-view class="store" scroll-y>
+  <view class="taobaolist">
+  <block wx:for="{{shop}}" wx:key="item">
+    <navigator url="../details/details?id={{item.id}}">
+    <view class="taobao-list">
+        <view class="taobao-list-info" index="{{index}}">
+          <image class="taobao-list-photo" src="{{item.image[0]}}"/>
+          <view class="taobao-list-desc">{{item.title}}</view>
+          <image src="{{item.tx}}" class="wximg"/>
+          <view class="wxname">{{item.name}}</view>
+        </view>
+    </view>
+  </navigator>
+  </block>
+</view>
+
+</scroll-view>
+
+<image src="https://img1.imgtp.com/2023/05/10/wFoiumAH.png" style="position: fixed;top: 550rpx;left: 80rpx;display: {{sfyc}};"/>

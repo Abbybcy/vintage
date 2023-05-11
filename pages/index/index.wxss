@@ -1,0 +1,126 @@
+.lunhui{
+  position: relative;
+  background-color: white;
+  width: 750rpx;
+  height: 200rpx;
+  /* border-radius: 30rpx; */
+  /* border: solid rgb(99, 97, 97) 0.5px; */
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  justify-content: center;
+}
+.lunbo{
+  width: 100%;
+}
+.ggao{
+  position: fixed;
+  top: 10rpx;
+  z-index: 2;
+}
+.picture{
+  position: absolute;
+  top: 15rpx;
+  left: 15rpx;
+  height: 170rpx;
+  width: 170rpx;
+  border-radius: 15rpx;
+}
+.money{
+  position: absolute;
+  top: 28rpx;
+  font-size: 25rpx;
+  left: 650rpx;
+  color: rgb(245, 153, 67);
+}
+.beijing{
+  position: absolute;
+  width: 750rpx;
+  height: 200rpx;
+  opacity:0.2;
+  border-top-right-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+  
+}
+.jieshao{
+  position: absolute;
+  top: 15rpx;
+  font-size: 40rpx;
+
+}
+.jieshao2{
+  position: absolute;
+  top: 158rpx;
+  left: 250rpx;
+  font-size: 28rpx;
+  width: 500rpx;
+}
+.yysj{
+  position: absolute;
+  top: 118rpx;
+  font-size: 28rpx;
+  left: 250rpx;
+}
+.gjc{
+  position: absolute;
+  top: 80rpx;
+  font-size: 25rpx;
+  left: 250rpx;
+  color: #9c9a9c;
+}
+.fgx{
+  position: absolute;
+  top: 200rpx;
+  left: 200rpx;
+  width: 500rpx;
+  height: 1rpx;
+  background-color: #929294;
+  border-bottom-width:100px ; 
+  z-index: 2;
+}
+.dibiao{
+  position: absolute;
+  top: 160rpx;
+  height: 200rpx;
+  /* border-radius: 30rpx; */
+  /* border: solid rgb(99, 97, 97) 0.5px; */
+  z-index: 2;
+  font-size: 25rpx;
+}
+.juli{
+  position: absolute;
+  left: 650rpx;
+  font-size: 24rpx;
+  top: 153rpx;
+  width: 100rpx;
+}
+.topbj{
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+  height: 205rpx;
+  background-color: white;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  justify-content: center;
+}
+.toptext{
+  position: fixed;
+  top: 105rpx;
+  font-weight: 600;
+  }
+  .cityselect{
+  position: fixed;
+  top: 105rpx;
+  left: 50rpx;
+  color: #ec8ff0;
+  }
+  .shoping{
+    position:absolute;
+    top: 120rpx;
+    left: 130rpx;
+    width: 80rpx;
+    height: 80rpx;
+  }

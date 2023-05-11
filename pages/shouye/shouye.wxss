@@ -1,0 +1,74 @@
+/* pages/shouye/shouye.wxss */
+.search{
+  width: 85%;height: 80rpx;background-color: rgb(223, 222, 222);top: 170rpx;position: relative;left: 15rpx;border-radius: 40rpx;padding-left: 80rpx;
+}
+
+.store{
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  height: 1230rpx;
+  width: 100%;
+  top: 240rpx;
+
+}
+
+.fenlei{
+  position: fixed;
+  top: 180rpx;
+  left: 30rpx;
+  height: 80rpx;
+  width: 90%;
+  background-color: white;
+  white-space: nowrap
+}
+
+.taobaolist{
+  margin-top: -70rpx;
+}
+
+.taobao-list-info{
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  position: relative;
+  margin-top: 15%;
+}
+
+.taobao-list-photo{
+  width: 350rpx;
+  height: 400rpx;
+  border-radius: 30rpx;
+}
+.taobao-list-desc{
+  display: block;
+  position: absolute;
+  color: #000000;
+  width: 100%;
+  font-size: 30rpx;
+  padding: 10rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.wximg{
+  position:absolute;
+  top: 465rpx;
+  width: 45rpx;
+  height: 45rpx;
+  left: 20rpx;
+  border-radius: 30rpx;
+}
+.wxname{
+  position:absolute;
+  top: 468rpx;
+  left: 80rpx;
+  font-size: 26rpx;
+}
+
+.fabu{
+  position:fixed;
+  width: 80rpx;
+  height: 80rpx;
+  top: 100rpx;
+  left: 10rpx;
+}

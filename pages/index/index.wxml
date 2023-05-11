@@ -1,0 +1,46 @@
+  <!-- <view style="position: fixed;width: 100%;z-index: 999;">
+    <swiper autoplay="true" circular="true" interval="3000" style="height: 300rpx;">
+      <swiper-item>
+        <image src="{{lunbo}}" class="lunbo"/>
+      </swiper-item>
+      <swiper-item>
+        <image src="{{lunbo2}}" class="lunbo"/>
+      </swiper-item>
+      <swiper-item>
+        <image src="{{lunbo3}}" class="lunbo"/>
+      </swiper-item>
+    </swiper>
+  </view> -->
+
+
+<view class="topbj">
+  <text class="toptext">{{cityname}}古着总览</text>
+  <picker mode="selector" class="cityselect" value="{{cityname}}" range="{{province}}" bindchange="xgdingwei">{{cityname}}
+  <image src="../image/定位2.png" style="position: fixed;width: 40rpx;height: 40rpx;left: 10rpx;top: 107rpx;"/>
+  </picker>
+  <view style="position: fixed;top: 160rpx;left: 200rpx;font-size:30rpx;color: {{wzcolor}};" bindtap="zhbutton">综合</view>
+  <view style="position: fixed;top: 160rpx;left: 500rpx;font-size:30rpx;color: {{wzcolor2}};" bindtap="jlbutton">距离</view>
+  <image src="../image/排序.png" style="width: 38rpx;height: 38rpx;position: fixed;top: 165rpx;left: 165rpx;"/>
+  <image src="../image/排序.png" style="width: 38rpx;height: 38rpx;position: fixed;top: 165rpx;left: 465rpx;"/>
+</view>
+
+
+<view class="first" style="position: absolute;top: 205rpx;">
+  <view class="lunhui" wx:for="{{demo}}" wx:key="xh" bindtap="intostore" data-value="{{item.wxid}}">
+    <image src="{{item.bj}}" class="beijing"/>
+    <image src="{{item.syt}}" class="picture"/>
+    <text class="jieshao" >{{item.dm}}</text>
+    <text class="money" >{{item.jw}}</text>
+    <text class="yysj">{{item.yysj}}</text>
+    <text class="gjc">{{item.gjc}}</text>
+    <image src="{{item.store}}" class="shoping"/>
+    <image src="../image/关键词.png" style="height: 30rpx;width: 30rpx;position: absolute;top: 80rpx;left: 205rpx;"/>
+    <image src="../image/钱币.png" style="height: 50rpx;width:50rpx;position: absolute;top: 20rpx;right: 100rpx;"/>
+    <image src="../image/时间.png" style="height: 40rpx;width: 40rpx;position: absolute;top: 118rpx;left: 200rpx;"/>
+    <image src="../image/定位.png" style="height: 40rpx;width: 40rpx;position: absolute;top: 158rpx;left: 200rpx;"/>
+    <text class="jieshao2">{{item.wz}}</text>
+      <image src="../image/位置.png" style="height: 35rpx;width: 35rpx;position: absolute;top: 157rpx;left: 610rpx;"/>
+      <input type="text" disabled="false" value="{{item.jl}}km" class="juli"/>
+    <view class="fgx"></view>
+  </view>
+</view>

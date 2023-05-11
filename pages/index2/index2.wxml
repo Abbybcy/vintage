@@ -1,0 +1,52 @@
+<!--pages/index2/index2.wxml-->
+<view class="topbj">
+  <button open-type="contact" class="kfan" style="width: 30rpx;">
+    <image src="../image/客服.png" class="kefu"/>
+  </button>
+  <text class="toptext">{{cityname}}古着总览</text>
+</view>
+
+
+<view style="position: fixed;width: 100%;">
+  <image src="{{bing}}" class="bing"> </image>
+<view class="title">今日{{cityname}}</view>
+<view class="tianqi">🌤️{{wheath.weather}}</view>
+<view class="tianqi" style="left:133rpx ;">🌬️{{wheath.winddirection}}</view>
+<view class="tianqi" style="left:240rpx;top: 291rpx;">🍃{{wheath.windpower }}</view>
+<view class="tianqi" style="left:340rpx ;font-size: 33rpx;top: 290rpx;">⏱️ {{wheath.reporttime}}</view>
+<view class="tianqi" style="left: 20rpx;top: 370rpx;">📖  "{{mryj}}"</view>
+</view>
+
+
+<scroll-view class="liuyan" scroll-y="true" refresher-enabled 	refresher-triggered="{{shuaxin}}" bindrefresherrefresh="shuaxin" style="display: {{lyyc}};">
+  <view class="lunhui" wx:for="{{liuyan}}" wx:key="xh">
+    <view class="beijing">
+    <text class="wxname" style="left: 590rpx; top: 90rpx;font-size: 25rpx;color: rgb(160, 160, 160);">{{item.xh}}楼</text>
+      <text class="wxname">{{item.content}}</text>
+      <image src="{{item.tx}}" mode="aspectFit" class="wxtx"/>
+    </view>
+  </view>
+</scroll-view>
+<view class="lykgn">
+<button class="aniu" style="width: 10rpx;" bindtap="liuyan">
+  <image src="../image/留言纸.png" class="lytb"/>
+</button>
+<text style="color: rgb(189, 187, 187);position: fixed;left: 50rpx;top: 470rpx;">在此留个言吧~</text>
+<view class="pingbi" style="display: {{sfyc}};"></view>
+<view class="lybj" style="display: {{sfyc}};">
+  <button class="gban" style="width: 30rpx;" bindtap="gbbutton"><image src="../image/关闭.png" class="guanbi"/></button>
+  <button open-type="chooseAvatar" style="width: 85rpx;height: 30rpx;position: absolute;left: 140rpx;top: 100rpx;" bindchooseavatar="hqtx">
+    <image src="{{mrtx}}" class="mrtx"/>
+  </button>
+  <textarea type="text" class="shuru" maxlength="30" placeholder="点击左边图标可设置头像~~" bindinput="content" value="{{content}}"></textarea>
+  <button class="wcheng" style="width: 200rpx;" bindtap="scbutton">留言</button>
+</view>
+</view>
+
+<view class="lyyc2" style="display: {{lyyc2}};">
+<image src="https://whfisher.xyz/gzlbt/pigs.jpg" class="pigs"/>
+<textarea value="亲爱的，由于用户人数的突然上升，我们的成本增加了，所以我需要在这里放一个广告，以此来减轻我们的压力，这样我们才能更好地发展哦~" class="ggts" disabled="true"/>
+<button  class="jsly" style="width: 300rpx;color: pink;" bindtap="adshow">
+解锁留言内容</button>
+</view>
+<!-- <text class="ip">IP:{{ip}}</text> -->
