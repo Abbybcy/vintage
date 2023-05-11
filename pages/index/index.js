@@ -52,7 +52,7 @@ Page({
     var province=[]
     var j=0
     wx.request({
-      url: 'https://whfisher.xyz/vintage/citys.php',
+      url: 'url',
       success(e){
         while(e.data.citys[j]){
           province[j]=e.data.citys[j].city
@@ -88,7 +88,7 @@ Page({
                     longitude:res.longitude
                   })
                   wx.request({
-                    url: 'https://whfisher.xyz/vintage/gzsjb2.php',
+                    url: 'url',
                     data:{
                       action:"read",
                       city:that.data.cityname
@@ -136,7 +136,7 @@ Page({
                     cityname:city2
                   })
                   wx.request({
-                    url: 'https://whfisher.xyz/vintage/gzsjb2.php',
+                    url: 'url',
                     data:{
                       action:"read",
                       city:city2
@@ -198,7 +198,7 @@ Page({
     wx.setStorageSync('cityname', city2)
     console.log("city2",city2)
     wx.request({
-      url: 'https://whfisher.xyz/vintage/gzsjb2.php',
+      url: 'url',
       data:{
         action:"read",
         city:city2
